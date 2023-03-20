@@ -1,0 +1,186 @@
+.App {
+  text-align: center;
+  background:#55c1db;
+  padding: 10vh 10vw; 
+  height:100%;
+  width:auto;
+  color:white;
+}
+
+.App h1 {
+  font-size: 36px;
+  text-shadow: 1px 1px white;
+  letter-spacing: 3px;
+  font-weight:bold;
+}
+
+.App .flex {
+  background:#555;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  min-height:400px;
+  align-items:center;
+  border-radius: 10px;
+  background: linear-gradient(90deg, rgba(85,85,85,.99) 0%, rgba(0,0,0,0.1));
+  position: relative;
+  overflow:hidden;
+}
+
+@media (max-width: 600px) {
+  .App .flex {
+    flex-direction:column;
+  }
+
+}
+
+.App .flex p {
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.App .flex h2 {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.App .flex ul {
+  text-align:left;
+  line-height:1.8;
+  font-size:18px;
+}
+
+.App .flex li {
+    list-style-type: none;
+}
+
+.App .flex li i {
+  margin-right: 10px;
+}
+
+.App .flex .left {
+  width:25%;
+  filter: contrast(1.5)
+}
+
+@media (max-width: 600px) {
+  .App .flex .left {
+    width:60%;
+  }
+}
+
+.App .flex .right {
+  width:75%;
+  padding-right:30px;
+}
+
+.App .flex .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(85,85,85,.3) 0%,  rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.99));
+}
+
+
+.App .right span:nth-child(1) {
+  animation: showbinary 0.5s linear;
+}
+
+.App .right span:nth-child(2) {
+  animation: showbinary 1.5s linear;
+}
+
+.App .right span:nth-child(3) {
+  animation: showbinary 3s linear;
+}
+
+.App .right span:nth-child(4) {
+  animation: showbinary 4.5s linear;
+}
+
+.App .right span:nth-child(5) {
+  animation: showbinary 6s linear;
+}
+.App .right span:nth-child(6) {
+  animation: showbinary 7.5s linear;
+}
+
+.App .right span:nth-child(7) {
+  animation: showbinary 9s linear;
+}
+
+.App .right span:nth-child(8) {
+  animation: showbinary 10.5s linear;
+}
+
+.App .right span:nth-child(9) {
+  animation: showbinary 12s linear;
+}
+
+.App .right span:nth-child(10) {
+  animation: showbinary 13.5s linear;
+}
+
+
+.App .right span:nth-child(11) {
+  animation: showbinary 15s linear;
+}
+
+.App .right span:nth-child(12) {
+  animation: showbinary 16.5s linear;
+}
+
+.App .right span:nth-child(13) {
+  animation: showbinary 18s linear;
+}
+.App .right span:nth-child(14) {
+  animation: showbinary 19.5s linear;
+}
+
+.App .right span:nth-child(15) {
+  animation: showbinary 21s linear;
+}
+
+.App .right span:nth-child(16) {
+  animation: showbinary 22.5s linear;
+}
+
+.App .right span:nth-child(17) {
+  animation: showbinary 24s linear;
+}
+
+.App .right span:nth-child(18) {
+  animation: showbinary 25.5s linear;
+}
+
+.App .right span {
+  filter: contrast(0.5);
+  margin: 20px;
+}
+
+
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes showbinary {
+  0% {
+    opacity:0;
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    opacity:1;
+    transform: scale(1);
+  }
+}
+
