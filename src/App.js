@@ -2,7 +2,7 @@ import React from 'react'
 import Flex from './Flex';
 import './App.css';
 import './font-awesome/css/font-awesome.min.css';
-import bluebg from './digital-blue-bg.webp';
+import bluebg from './space-bg.jpg';
 
 class App extends React.Component {
    
