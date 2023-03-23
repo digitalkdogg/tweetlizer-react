@@ -11,29 +11,8 @@ class Flex extends React.Component {
           
       }
        
-      //  const rightele = document.getElementsByClassName('right')
-
-      //  if (rightele.length === 1) {
-      //      let rightheight = rightele[0].clientHeight
-     //       console.log(rightele[0].children)
-     //       let overlay = rightele[0].children
-     //       if (overlay.length >= 1) {
-     //           if (overlay[0].getAttribute('class')==='overlay') {
-     //               console.log('yep i am here')
-     //               overlay[0].style.height = rightheight = 'px'
-     //           }
-     //       }
-     //   }
-    //}
     render() {
-      //  const setText = function () {
-      //     setTimeout(function () {
-      //        console.log('hi')
-      //     },1000)
-      //  }
-       
 
-       
         return (
             <div className = "flex">             
                 <div className = "middle">

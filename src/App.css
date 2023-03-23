@@ -67,39 +67,7 @@
   margin-right: 10px;
 }
 
-/*.App .flex .left {
-  width:25%;
-  filter: contrast(1.5)
-}
-
-@media (max-width: 600px) {
-  .App .flex .left {
-    width:60%;
-  }
-}
-
-.App .flex .right {
-  width:75%;
-  padding-right:30px;
-} */
-
 .App-link {
   color: #61dafb;
-}
-
-@keyframes showbinary {
-  0% {
-    opacity:0;
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.2);
-  }
-
-  100% {
-    opacity:1;
-    transform: scale(1);
-  }
 }
 
