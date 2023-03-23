@@ -17,7 +17,7 @@ class App extends React.Component {
       }
     
       componentDidMount() {
-         let baseurl =''
+         let baseurl ='https://api.tweetlizer.com/public'
          if (process.env.NODE_ENV==='development') {
              baseurl = 'http://localhost:8001'
         }
