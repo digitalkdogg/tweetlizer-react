@@ -22,7 +22,7 @@ class App extends React.Component {
              baseurl = 'http://localhost:8000'
         }
 
-        console.log(process.env)
+        console.log(process.env.REACT_APP_NOT_SECRET_CODE)
 
         const requestOptions = {
           method: 'POST',
