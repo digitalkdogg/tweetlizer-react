@@ -21,7 +21,7 @@ class App extends React.Component {
          if (process.env.NODE_ENV==='development') {
              baseurl = 'http://localhost:8001'
         }
-        fetch(baseurl + "/api/test")
+        fetch(baseurl + "/api/auth")
           .then(res => res.json())
           .then(
             (result) => {
