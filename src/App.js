@@ -22,12 +22,15 @@ class App extends React.Component {
              baseurl = 'http://localhost:8000'
         }
 
-        console.log(process.env.REACT_APP_NOT_SECRET_CODE)
+        var key = process.env.REACT_APP_NOT_SECRET_CODE.split('=');
+        if (key.length = 2) {
+          key = key[1];
+        }
 
         const requestOptions = {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          //body: JSON.stringify({ title: 'React POST Request Example' })
+          body: JSON.stringify({ key: key })
       };
         fetch(baseurl + "/api/auth", requestOptions)
           .then(res => res.json())
