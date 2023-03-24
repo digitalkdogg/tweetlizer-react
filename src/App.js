@@ -19,9 +19,15 @@ class App extends React.Component {
       componentDidMount() {
          let baseurl ='https://api.tweetlizer.com/public'
          if (process.env.NODE_ENV==='development') {
-             baseurl = 'http://localhost:8001'
+             baseurl = 'http://localhost:8000'
         }
-        fetch(baseurl + "/api/auth")
+
+        const requestOptions = {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          //body: JSON.stringify({ title: 'React POST Request Example' })
+      };
+        fetch(baseurl + "/api/auth", requestOptions)
           .then(res => res.json())
           .then(
             (result) => {
