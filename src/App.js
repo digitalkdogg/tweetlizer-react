@@ -22,6 +22,8 @@ class App extends React.Component {
              baseurl = 'http://localhost:8000'
         }
 
+        console.log(process.env)
+
         const requestOptions = {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
