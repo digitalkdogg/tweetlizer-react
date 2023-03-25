@@ -14,8 +14,8 @@ class App extends React.Component {
           isLoaded: false,
           items: [],
           bearer: '',
-          //baseurl: 'https://api.tweetlizer.com/public'
-          baseurl : 'http://localhost:8000' //need to move to env variable
+          baseurl: 'https://api.tweetlizer.com/public'
+         // baseurl : 'http://localhost:8000' //need to move to env variable
         };
       }
     
