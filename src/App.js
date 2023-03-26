@@ -20,6 +20,7 @@ class App extends React.Component {
       }
     
       componentDidMount() {
+        console.log(process.env);
         // let baseurl ='https://api.tweetlizer.com/public'
          if (process.env.NODE_ENV==='development') {
             this.setState({
