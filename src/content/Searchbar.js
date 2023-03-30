@@ -1,15 +1,26 @@
 import React from 'react';
 
 class Searchbar extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            bearer : ''
+        }
+    }
+
+    componentWillMount() {
+        this.setState({'bearer':  this.props.bearer })
+        var _this = this;
+        setTimeout(function () {
+            console.log('search');
+            console.log(_this.state)
+        },1000)
+    }
+
     render() {
   
         return (
-            <div className = "search-bar-wrap">
-                <p>To begin type in any Tweeter screen name</p>
-                <div className = "search-bar-row">
-                    <input type = "text" id = "search-bar"></input> <button id = "search-this">Lets Go</button>
-                </div>
-            </div>
+         <div></div>
         );
         }
 }

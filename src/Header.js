@@ -12,7 +12,11 @@ class Header extends React.Component {
     render() {
   
         return (
-            <div className = "header" style={{ backgroundImage:`url(${bluebg})`}}><h1>Tweetlizer.com</h1></div>
+            <div className="header" style={{ backgroundImage:`url(${bluebg})`}}>
+                
+                <h1>Tweetlizer.com</h1>
+
+            </div>
         );
         }
 }
